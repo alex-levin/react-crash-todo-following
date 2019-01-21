@@ -1,0 +1,23 @@
+mkdir react-crash-todo
+cd react-crash-todo
+npx create-react-app .
+Generates a new react app in a current folder.
+Using npx allows to generate a new react application without installing it on our system
+
+npm start
+
+VS Code extensions:
+ES7 React/Redux/GraphQL/React-Native snippets
+To use it: rce+TAB. This will generate React component.
+
+Classes
+class Person { 
+  constructor(name) {
+    this.name=name;
+  } 
+  getName() { 
+    console.log(this.name) 
+  } 
+}
+p = new Person('alex');
+p.getName(); // alex
