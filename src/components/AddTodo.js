@@ -9,6 +9,7 @@ export class AddTodo extends Component {
   onSubmit = (e) => {
     // want to prevent submitting to an actual file - like in vanilla JavaScript
     e.preventDefault();
+    // addTodo is passed from App where it is defined
     this.props.addTodo(this.state.title);
     this.setState({ title: '' });
   }
